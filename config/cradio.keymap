@@ -64,7 +64,7 @@
             &kp DEL    &kp N4     &kp N5     &kp N6    &kp kp_plus     &kp SEMI   &kp LARW   &kp DARW   &kp UARW   &kp RARW   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  1       │  2       │  3       │          │   │          │  END     │ PAGE DN  |          │          │  
-           &kp caps   &kp N1     &kp N2     &kp N3     &trans         &trans      &kp END   &kp PG_UP     &trans     &trans
+           &kp CAPS   &kp N1     &kp N2     &kp N3     &trans         &trans      &kp END   &kp PG_UP     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
