@@ -57,14 +57,14 @@
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  CTR Home│  7       │  8       │  9       │     *    │   │  :       │HOME      │ PAGE UP  │   -      │  =       |
-          &kp LC(Home) &kp KP_N7  &kp KP_N8  &kp KP_N9 &kp KP_ASTERISK  &kp COLON  &kp HOME  &kp PG_DN &kp MINUS  &kp EQUAL
+        //│  CTR HOME│  7       │  8       │  9       │     *    │   │  :       │HOME      │ PAGE UP  │   -      │  =       |
+          &kp LC(HOME) &kp KP_N7  &kp KP_N8  &kp KP_N9 &kp KP_ASTERISK  &kp COLON  &kp HOME  &kp PG_UP &kp MINUS  &kp EQUAL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ DELETE   │  4       │  5       │  6       │    +     │   │          │LEFT      │ DOWN     │ UP       │ RIGHT    │ 
             &kp DEL   &kp KP_N4  &kp KP_N5  &kp KP_N6 &kp KP_PLUS      &trans    &kp LARW   &kp DARW   &kp UARW   &kp RARW   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  1       │  2       │  3       │   0      │   │          │  END     │ PAGE DN  |          │          │  
-           &kp CAPS   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0       &trans      &kp END   &kp PG_UP  &kp UNDER  &kp BSLH 
+        //│ CAPS     │  1       │  2       │  3       │   0      │   │          │  END     │ PAGE DN  |   _      │   \      │  
+           &kp CAPS   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0       &trans      &kp END   &kp PG_DN  &kp UNDER  &kp BSLH 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -94,7 +94,7 @@
         //│ RESET    │          │          │          │PROFILE 0 │   │PROFILE 3 │          │          │          │  RESET   │
            &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0   &bt BT_SEL 3  &trans     &trans     &trans    &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│BOOTLOADER│          │          │          │PROFILE 1 │   │PROFILE 4 │          │          │          │BOOTLOADER│
+        //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
           &bootloader  &trans     &trans     &trans    &bt BT_SEL 1   &trans       &trans     &trans     &trans    &bootloader
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
