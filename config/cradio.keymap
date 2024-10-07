@@ -19,8 +19,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-//            tapping-term-ms = <220>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <220>;
              quick-tap-ms = <150>;
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
@@ -28,18 +27,6 @@
     };
 
 / {
-    behaviors {
-        ht: hold_tap {
-            label = "hold_tap";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <225>;
-             quick-tap-ms = <150>;
-            require-prior-idle-ms = <100>;
-            bindings = <&kp>, <&kp>;
-        };
-    };
 
 
 combos {
@@ -48,56 +35,56 @@ combos {
         combo_z {
             timeout-ms = <50>;
             key-positions = <20 21>;
-			layers = <DEF_L>;
+			layers = <default_layer>;
             bindings = <&kp Z>;
         };
         combo_b {
             timeout-ms = <50>;
             key-positions = <21 22>;
-			layers = <DEF_L>;
+			layers = <default_layer>;
             bindings = <&kp X>;
         };
         combo_q {
             timeout-ms = <50>;
             key-positions = <6 7>;
-			layers = <DEF_L>;
+			layers = <default_layer>;
             bindings = <&kp Q>;
         };
         combo_esc {
             timeout-ms = <50>;
             key-positions = <0 1>;
-			layers = <DEF_L>;
+			layers = <default_layer>;
             bindings = <&kp ESC>;
         };
         combo_comma {
             timeout-ms = <50>;
             key-positions = <24 25>;
-			layers = <DEF_L>;
+			layers = <default_layer>;
             bindings = <&kp COMMA>;
         };
 		/* ====== Number Layer ====== */		
         combo_lbrk {
             timeout-ms = <50>;
             key-positions = <5 6>;
-			layers = <NUM_L>;
+			layers = <right_layer>;
             bindings = <&kp LPAR>;
         };
         combo_rbrk {
             timeout-ms = <50>;
             key-positions = <6 7>;
-			layers = <NUM_L>;
+			layers = <right_layer>;
             bindings = <&kp RPAR>;
         };
         combo_lcbrk {
             timeout-ms = <50>;
             key-positions = <7 8>;
-			layers = <NUM_L>;
+			layers = <right_layer>;
             bindings = <&kp LBRC>;
         };
         combo_rcbrk {
             timeout-ms = <50>;
             key-positions = <8 9>;
-			layers = <NUM_L>;
+			layers = <right_layer>;
             bindings = <&kp RBRC>;
         };
     };
@@ -160,7 +147,7 @@ combos {
         //│  !       │  @       │  #       │  $       │  %       │   │   ^      | &        │   *      |  (       │  )       │  
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR   
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp TILDE  &kp ENTER       &kp GRAVE  &trans     
+                                             &kp TILDE  &kp ENTER      &kp GRAVE  &trans     
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
