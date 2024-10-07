@@ -85,7 +85,6 @@ combos {
             bindings = <&kp RBRC>;
         };
     };
-};
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
