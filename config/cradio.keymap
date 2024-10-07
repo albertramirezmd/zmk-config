@@ -26,68 +26,10 @@
         };
     };
 
-/ {
-
-
-combos {
-        compatible = "zmk,combos";
-		/* ====== Default Layer ====== */
-        combo_z {
-            timeout-ms = <50>;
-            key-positions = <20 21>;
-			layers = <default_layer>;
-            bindings = <&kp Z>;
-        };
-        combo_b {
-            timeout-ms = <50>;
-            key-positions = <21 22>;
-			layers = <default_layer>;
-            bindings = <&kp X>;
-        };
-        combo_q {
-            timeout-ms = <50>;
-            key-positions = <6 7>;
-			layers = <default_layer>;
-            bindings = <&kp Q>;
-        };
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-			layers = <default_layer>;
-            bindings = <&kp ESC>;
-        };
-        combo_comma {
-            timeout-ms = <50>;
-            key-positions = <24 25>;
-			layers = <default_layer>;
-            bindings = <&kp COMMA>;
-        };
-		/* ====== Number Layer ====== */		
-        combo_lbrk {
-            timeout-ms = <50>;
-            key-positions = <5 6>;
-			layers = <right_layer>;
-            bindings = <&kp LPAR>;
-        };
-        combo_rbrk {
-            timeout-ms = <50>;
-            key-positions = <6 7>;
-			layers = <right_layer>;
-            bindings = <&kp RPAR>;
-        };
-        combo_lcbrk {
-            timeout-ms = <50>;
-            key-positions = <7 8>;
-			layers = <right_layer>;
-            bindings = <&kp LBRC>;
-        };
-        combo_rcbrk {
-            timeout-ms = <50>;
-            key-positions = <8 9>;
-			layers = <right_layer>;
-            bindings = <&kp RBRC>;
-        };
-    };
+&sk {
+    release-after-ms = <2000>;
+    quick-release;
+    /delete-property/ ignore-modifiers;
 };
 
     conditional_layers {
@@ -112,7 +54,7 @@ combos {
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &sk LSFT   &lt 1 TAB      &lt 2 SPACE  &sk LCRTL 
+                                           &sk LSHIFT   &lt 1 TAB      &lt 2 SPACE  &sk LCTRL 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
