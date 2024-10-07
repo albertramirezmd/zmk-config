@@ -26,12 +26,6 @@
         };
     };
 
-&sk {
-    release-after-ms = <2000>;
-    quick-release;
-    /delete-property/ ignore-modifiers;
-};
-
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
@@ -39,6 +33,7 @@
             then-layer = <3>;
         };
     };
+
 
     keymap {
         compatible = "zmk,keymap";
@@ -59,7 +54,6 @@
             >;
         };
 
-        //right is layer 1
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
