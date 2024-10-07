@@ -26,66 +26,6 @@
         };
     };
 
-combos {
-        compatible = "zmk,combos";
-		/* ====== Default Layer ====== */
-        combo_z {
-            timeout-ms = <50>;
-            key-positions = <20 21>;
-			layers = <default_layer>;
-            bindings = <&kp Z>;
-        };
-        combo_b {
-            timeout-ms = <50>;
-            key-positions = <21 22>;
-			layers = <default_layer>;
-            bindings = <&kp X>;
-        };
-        combo_q {
-            timeout-ms = <50>;
-            key-positions = <6 7>;
-			layers = <default_layer>;
-            bindings = <&kp Q>;
-        };
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-			layers = <default_layer>;
-            bindings = <&kp ESC>;
-        };
-        combo_comma {
-            timeout-ms = <50>;
-            key-positions = <24 25>;
-			layers = <default_layer>;
-            bindings = <&kp COMMA>;
-        };
-		/* ====== Number Layer ====== */		
-        combo_lbrk {
-            timeout-ms = <50>;
-            key-positions = <5 6>;
-			layers = <right_layer>;
-            bindings = <&kp LPAR>;
-        };
-        combo_rbrk {
-            timeout-ms = <50>;
-            key-positions = <6 7>;
-			layers = <right_layer>;
-            bindings = <&kp RPAR>;
-        };
-        combo_lcbrk {
-            timeout-ms = <50>;
-            key-positions = <7 8>;
-			layers = <right_layer>;
-            bindings = <&kp LBRC>;
-        };
-        combo_rcbrk {
-            timeout-ms = <50>;
-            key-positions = <8 9>;
-			layers = <right_layer>;
-            bindings = <&kp RBRC>;
-        };
-    };
-
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
