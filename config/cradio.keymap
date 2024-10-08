@@ -46,17 +46,42 @@
             key-positions = <7 8>;
             bindings = <&kp MINUS>;
         };
+        combo_equal {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp MINUS>;
+        };
          combo_bsword{
             timeout-ms = <50>;
             key-positions = <8 9>;
             bindings = <&kp LC(BSPC)>;
+        };
+          combo_undo{
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&kp LC(Z)>;
+        };
+          combo_cut{
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&kp LC(X)>;
+        };
+          combo_paste{
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            bindings = <&kp LC(V)>;
+        };
+          combo_redo{
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+            bindings = <&kp LC(Y)>;
         };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <17 18>;
+            if-layers = <1 2>;
             then-layer = <3>;
         };
     };
@@ -81,7 +106,7 @@
             >;
         };
 
-//layer 1 arrows keypad backspace
+//layer 1 arrows keypad backspace Left thumb
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
@@ -92,14 +117,14 @@
             &kp BSPC   &kp KP_N4  &kp KP_N5  &kp KP_N6 &kp KP_PLUS    &kp LC(HOME) &kp LEFT   &kp DOWN    &kp UP     &kp RIGHT   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  1       │  2       │  3       │   0      │   │          │  END     │ PAGE DN  |   _      │   \      │  
-           &kp CAPS   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0       &trans      &kp END   &kp PG_DN  &kp UNDER  &kp BSLH 
+           &kp CAPS   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0     &kp ALT(Tab)  &kp END   &kp PG_DN  &kp UNDER  &kp BSLH 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &kp BSPC   &lt 2 DEL
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
 
-//layer 2 numbers
+//layer 2 numbers symbols enter right thumb
 
         left_layer {
             bindings = <
