@@ -51,27 +51,27 @@
             key-positions = <8 9>;
             bindings = <&kp MINUS>;
         };
-         combo_bsword{
+         combo_bsword {
             timeout-ms = <50>;
             key-positions = <8 9>;
             bindings = <&kp LC(BSPC)>;
         };
-          combo_undo{
+          combo_undo {
             timeout-ms = <50>;
             key-positions = <20 21>;
             bindings = <&kp LC(Z)>;
         };
-          combo_cut{
+          combo_cut {
             timeout-ms = <50>;
             key-positions = <21 22>;
             bindings = <&kp LC(X)>;
         };
-          combo_paste{
+          combo_paste {
             timeout-ms = <50>;
             key-positions = <22 23>;
             bindings = <&kp LC(V)>;
         };
-          combo_redo{
+          combo_redo {
             timeout-ms = <50>;
             key-positions = <23 24>;
             bindings = <&kp LC(Y)>;
