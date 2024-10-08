@@ -117,7 +117,7 @@
             &kp BSPC   &kp KP_N4  &kp KP_N5  &kp KP_N6 &kp KP_PLUS    &kp LC(HOME) &kp LEFT   &kp DOWN    &kp UP     &kp RIGHT   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  1       │  2       │  3       │   0      │   │          │  END     │ PAGE DN  |   _      │   \      │  
-           &kp CAPS   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0     &trans     &kp END   &kp PG_DN  &kp UNDER  &kp BSLH 
+           &kp CAPS   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0     &kp LALT(TAB) &kp END   &kp PG_DN  &kp UNDER  &kp BSLH 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &kp BSPC   &lt 2 DEL
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
