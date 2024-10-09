@@ -138,7 +138,7 @@
         //│  !       │  @       │  #       │  $       │  %       │   │   ^      | &        │   *      |  (       │  )       │  
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR   
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp TILDE  &kp ENTER      &kp GRAVE  &trans     
+                                            &kp F11   &kp ENTER      &kp GRAVE  &kp F12  
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -153,7 +153,7 @@
           &bootloader  &trans     &trans     &trans    &bt BT_SEL 1  &bt BT_SEL 4 &trans     &trans     &trans    &bootloader
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │BTCLEARALL│ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-            &kp LBKT   &trans   &bt BT_CLR_ALL &bt BT_CLR  &bt BT_SEL 2 &trans     &trans     &trans     &trans     &kp RBKT
+            &kp LBKT  &kp TILDE  &bt BT_CLR_ALL &bt BT_CLR  &bt BT_SEL 2 &trans     &trans     &trans     &trans     &kp RBKT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
