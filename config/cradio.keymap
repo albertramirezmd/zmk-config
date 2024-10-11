@@ -75,14 +75,19 @@
             key-positions = <21 22>;
             bindings = <&kp LC(X)>;
         };
-          combo_paste {
+          combo_copy {
             timeout-ms = <50>;
             key-positions = <22 23>;
+            bindings = <&kp LC(C)>;
+        };
+          combo_paste {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
             bindings = <&kp LC(V)>;
         };
           combo_redo {
             timeout-ms = <50>;
-            key-positions = <23 24>;
+            key-positions = <20 24>;
             bindings = <&kp LC(Y)>;
         };
     };
