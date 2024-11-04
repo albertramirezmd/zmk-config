@@ -161,13 +161,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ RESET    │          │          │          │PROFILE 0 │   │PROFILE 3 │          │          │          │  RESET   │
-           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0   &bt BT_SEL 3  &trans     &trans     &trans    &sys_reset
+           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0   &bt BT_SEL 3 &kp CAPS   &trans     &trans    &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │PROFILE 1 │   │Profile 4 │          │          │          │BOOTLOADER│
-          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1  &bt BT_SEL 4 &trans     &trans     &trans    &bootloader
+          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1  &bt BT_SEL 4 &kp INS   &trans     &trans    &bootloader
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │BTCLEARALL│ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-            &kp LBKT  &kp TILDE  &bt BT_CLR_ALL &bt BT_CLR  &bt BT_SEL 2 &trans     &trans     &trans     &trans     &kp RBKT
+            &kp LBKT  &kp TILDE  &bt BT_CLR_ALL &bt BT_CLR  &bt BT_SEL 2 &trans  &kp SLCK    &trans     &trans     &kp RBKT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
