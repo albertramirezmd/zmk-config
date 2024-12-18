@@ -164,7 +164,7 @@
            &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0   &bt BT_SEL 3 &kp CAPS   &trans     &trans    &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ │ SQT    |BOOTLOADER│          │          │PROFILE 1 │   │Profile 4 │          │          │BOOTLOADER|  DQT     |
-          &DQT  &bootloader     &trans     &trans    &bt BT_SEL 1  &bt BT_SEL 4 &kp INS   &trans     &bootloader    &DQT
+          &DOUBLE_QUOTES  &bootloader     &trans     &trans    &bt BT_SEL 1  &bt BT_SEL 4 &kp INS   &trans     &bootloader    &DOUBLE_QUOTES
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │BTCLEARALL│ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &kp LBKT  &kp TILDE  &bt BT_CLR_ALL &bt BT_CLR  &bt BT_SEL 2 &trans  &kp SLCK    &trans     &trans     &kp RBKT
