@@ -58,7 +58,7 @@
          combo_backspacde {
             timeout-ms = <50>;
             key-positions = <8 9>;
-            bindings = <&kp LC(BSPC)>;
+            bindings = <&kp BSPC>;
         };
          combo_bsword {
             timeout-ms = <50>;
