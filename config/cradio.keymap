@@ -26,19 +26,6 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
-         mmv: mouse_move {
-            compatible = "zmk,behavior-mouse-move";
-            #binding-cells = <1>;
-            time-to-max-speed-ms = <300>; // Time to reach full speed
-            acceleration-exponent = <1>;  // 1 = Linear acceleration
-        };
-        msc: mouse_scroll {
-            compatible = "zmk,behavior-mouse-scroll";
-            #binding-cells = <1>;
-            delay-ms = <0>;
-            time-to-max-speed-ms = <300>;
-            acceleration-exponent = <1>;
-        };
     };
  
     combos {
@@ -54,11 +41,13 @@
             timeout-ms = <50>;
             key-positions = <18 19>;
             bindings = <&kp ENTER>;
+            layers = <0 1 2 3>;  // Disable in Mouse Layer
         };
         combo_returnbetter {
             timeout-ms = <50>;
             key-positions = <17 18>;
             bindings = <&kp ENTER>;
+            layers = <0 1 2 3>;  // Disable in Mouse Layer
         };
         combo_dash {
             timeout-ms = <50>;
