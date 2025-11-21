@@ -189,8 +189,8 @@
         //│          │ L CLICK  │ M CLICK  │ R CLICK  │          │   │          │ M_LEFT   │ M_DOWN   │ M_UP     │ M_RIGHT  │
             &trans     &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans         &trans  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
+        //│          │ SCRL L   │ SCRL D   │ SCRL U   │ SCRL R   │   │          │          │          │          │          │
+      &trans &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                            &trans       &trans         &tog 4     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
