@@ -36,16 +36,22 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
-        combo_return {
+        combo_singlequote {
             timeout-ms = <50>;
             key-positions = <18 19>;
             bindings = <&kp SINGLE_QUOTE>;
+            layers = <0 1 2 3>;  // Disable in Mouse Layer
         };
-        combo_returnbetter {
+        combo_return {
             timeout-ms = <50>;
             key-positions = <17 18>;
             bindings = <&kp ENTER>;
             layers = <0 1 2 3>;  // Disable in Mouse Layer
+        };
+         combo_undo {
+            timeout-ms = <50>;
+            key-positions = <5 6>;
+            bindings = <&kp LC(Y)>;
         };
         combo_dash {
             timeout-ms = <50>;
@@ -57,17 +63,12 @@
             key-positions = <7 8>;
             bindings = <&kp EQUAL>;
         };
-         combo_backspacde {
+         combo_backspace {
             timeout-ms = <50>;
             key-positions = <8 9>;
             bindings = <&kp BSPC>;
         };
          combo_bsword {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp LC(BSPC)>;
-        };
-         combo_bswordbetter {
             timeout-ms = <50>;
             key-positions = <11 12>;
             bindings = <&kp LC(BSPC)>;
@@ -140,7 +141,7 @@
         //│     0    │  1       │  2       │  3       | KP_DOT   │   │          │  END     │ PAGE DN  |   _      │   \      │  
             &kp KP_N0 &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp KP_DOT   &kp LA(TAB) &kp END   &kp PG_DN  &kp UNDER  &kp BSLH 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                              &kp ESC   &trans        &kp BSPC   &lt 2 DEL
+                                              &kp ESC   &trans        &lt 2 BSPC  &kp DEL
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
