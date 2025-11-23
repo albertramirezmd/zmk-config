@@ -62,6 +62,7 @@
             timeout-ms = <30>;
             key-positions = <7 8>;
             bindings = <&kp EQUAL>;
+            require-prior-idle-ms = <100>;
         };
          combo_backspace {
             timeout-ms = <50>;
