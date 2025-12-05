@@ -99,6 +99,11 @@
             key-positions = <20 24>;
             bindings = <&kp LC(Y)>;
         };
+        combo_togmouse {
+            timeout-ms = <50>;
+            key-positions = <10 31>;
+            bindings = <&tog 4>;
+        };
     };
 
     conditional_layers {
